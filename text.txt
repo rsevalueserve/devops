@@ -1,0 +1,7 @@
+Good morning Erick,
+
+Taking into account the recommendations made to integrate workloads on Brewey servers, I allow myself to share the governance that is being developed for the management of team engineering's Github. Also the diagram of how we could integrate some of the projects using Brewery.
+
+I remain attentive to any doubts and concerns and of course I am waiting for the feasibility of being able to do so.
+
+Kindly, 
