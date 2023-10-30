@@ -1,13 +1,20 @@
-Subject: Integration Proposal and Governance Overview
+const template = `
+<table border="1">
+  <tr>
+      <th>Name</th>
+      <th>HTML URL</th>
+  </tr>
+  {{#each response}}
+  <tr>
+      <td>{{this.name}}</td>
+      <td><a href="{{this.html_url}}">{{this.html_url}}</a></td>
+  </tr>
+  {{/each}}
+</table>
+`;
 
-Good morning Erick,
+const data = {
+    response: pm.response.json()
+};
 
-I hope this email finds you well. Following our discussions with the Brewery team regarding the potential integration of our projects using Brewery's infrastructure, I'd like to share some crucial updates.
-
-Firstly, we've taken a closer look at our team's internal governance in response to Brewery's valid questions about our team leadership and governance practices. I'm pleased to inform you that we're in the process of formalizing a governance structure, ensuring our projects align seamlessly with external platforms like Brewery.
-
-Additionally, I've created a detailed diagram outlining the proposed integration between our GitHub and Brewery servers. This visual aid should give you a clearer understanding of how we envision the integration and collaboration going forward.
-
-I'm keen to get your feedback on these developments. Please don't hesitate to share any questions, concerns, or suggestions you might have. We're eager to ensure that this potential integration is beneficial for both our teams.
-
-Warm regards,
+pm.visualizer.set(template, data);
